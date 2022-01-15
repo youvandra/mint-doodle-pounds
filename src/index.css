@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&display=swap');
 html {
   scroll-behavior: smooth;
 }
@@ -9,7 +9,7 @@ body {
   margin-top: 0px;
   height: 100%;
   /* font-family: Bbc, sans-serif; */
-  font-family: "Comic Neue", cursive;
+  font-family: 'Be Vietnam Pro', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #421870;

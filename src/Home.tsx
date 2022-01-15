@@ -27,9 +27,9 @@ import { AlertState } from "./utils";
 const ConnectButton = styled(WalletDialogButton)``;
 
 const MintContainer = styled.div`
-  backgroundColor: "#43beeb",
+  backgroundColor: "black",
   fontSize: "20px",
-  font-family: "Comic Neue", cursive;
+  font-family: "Holtwood One SC, serif;
   minWidth: "150px",
   color: "white",
   justifyContent: "center",`; // add your styles here
@@ -179,11 +179,6 @@ const Home = (props: HomeProps) => {
         {itemsRedeemed} / {itemsAvailable} Minted
       </h3>
     )}
-    {/* 
-    {wallet && <p>Redeemed: {itemsRedeemed}</p>}
-
-    {wallet && <p>Remaining: {itemsRemaining}</p>} */}
-
     {
       <MintContainer>
         {!wallet ? (
@@ -215,8 +210,7 @@ const Home = (props: HomeProps) => {
               candyMachine?.state?.gatekeeper?.gatekeeperNetwork
             } // This is the ignite (captcha) network
             /// Don't need this for mainnet
-            clusterUrl={rpcUrl}
-            options={{ autoShowModal: false }}
+            
           >
             <MintButton
               candyMachine={candyMachine}
